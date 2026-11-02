@@ -8,3 +8,19 @@
 .nav button.active{background:white;color:#68409a;box-shadow:0 1px 5px #0000000d}
 @media(min-width:650px){.nav{padding-left:24px;padding-right:24px}.nav button{font-size:11px;padding:7px 1px;min-height:60px}}
 @media(max-width:370px){.nav button{font-size:9px;gap:4px}.nav button svg{width:19px;height:19px}}
+
+/* Searchable inventory products inside signature look editor */
+.productpicker{position:relative;margin-top:8px;min-width:0}
+.productsearch{display:flex;align-items:center;gap:7px;background:#fff;border:1px solid #e7e0ee;border-radius:9px;padding:0 9px;color:#806d99}
+.productsearch input{border:0;outline:0;min-width:0;width:100%;font-size:16px;padding:10px 0;background:transparent;color:#302739}
+.productresults{margin-top:5px;border:1px solid #e7e0ee;border-radius:9px;background:#fff;max-height:210px;overflow:auto;padding:4px}
+.productresult{display:flex;align-items:center;gap:9px;width:100%;min-height:43px;background:#fff;text-align:left;padding:6px;color:#322a3c;border-radius:7px}
+.productresult:active{background:#f1ebf8}
+.productresult img{width:31px;height:31px;object-fit:cover;border-radius:6px}
+.productresult span{min-width:0;flex:1}
+.productresult b,.productresult small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.productresult b{font-size:12px}.productresult small{font-size:10px;color:#877b92}
+.productresults>.muted{display:block;padding:10px}
+.productclose{display:block;margin-left:auto;background:transparent;font-size:11px;color:#795b9d;padding:7px}
+.productselected{margin-top:8px;flex-wrap:wrap;overflow:visible;padding-bottom:0}
+.productselected .productchip{border:0}
