@@ -24,3 +24,20 @@
 .productclose{display:block;margin-left:auto;background:transparent;font-size:11px;color:#795b9d;padding:7px}
 .productselected{margin-top:8px;flex-wrap:wrap;overflow:visible;padding-bottom:0}
 .productselected .productchip{border:0}
+
+/* Dance Flow-inspired technique library */
+.skill-list-row{display:flex;align-items:center;gap:9px;min-height:57px;border-bottom:1px solid #e9e4ed;padding:7px 0}
+.skill-list-main{display:flex;flex:1;min-width:0;flex-direction:column;align-items:flex-start;text-align:left;gap:3px;background:transparent;color:#292337;padding:5px 0}
+.skill-list-main b{font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+.skill-list-main small{font-size:11px;color:#968a9e;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+.skill-status{background:#f0e9f8;border:0;border-radius:12px;max-width:110px;min-width:0;font-size:11px;color:#7855a8;padding:7px 3px;flex-shrink:0}
+.skill-category-pair{display:grid;grid-template-columns:1fr 1fr;gap:9px;min-width:0}
+.skill-gallery{margin:3px 0 12px;min-width:0}
+.skill-gallery-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:9px;font-size:12px}
+.skill-gallery-track{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}
+.skill-gallery-card{width:98px;flex:0 0 98px;border:1px solid #e7e0ed;border-radius:9px;overflow:hidden;background:#fff}
+.skill-gallery-card>img{width:100%;height:88px;object-fit:cover}
+.skill-gallery-card>div{display:flex;justify-content:space-around}
+.skill-gallery-card button{background:transparent;color:#8064a4;padding:8px}
+.skill-gallery-card button.chosen{color:#68409a;background:#eee6f8}
+@media(max-width:370px){.skill-status{max-width:100px}.skill-list-row{gap:5px}}
