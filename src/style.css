@@ -72,3 +72,5 @@
 .studio-zoom-controls button.selected{background:#dcd0ef;color:#624292}
 .studio-zoom-controls small{color:#91859e;font-size:10px}
 @media(max-width:699px){.studio-video-wrap{max-width:100%}}
+
+.linked-caution-list{padding:10px;margin:9px 0;background:#f8f5fb;border-radius:10px}.linked-caution-list small,.linked-caution-list span{display:block;font-size:11px}.linked-caution-list p{margin:8px 0;white-space:pre-wrap}
