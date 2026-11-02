@@ -41,3 +41,21 @@
 .skill-gallery-card button{background:transparent;color:#8064a4;padding:8px}
 .skill-gallery-card button.chosen{color:#68409a;background:#eee6f8}
 @media(max-width:370px){.skill-status{max-width:100px}.skill-list-row{gap:5px}}
+
+/* Bookmark practice and edit studio */
+.bookmark-studio{min-width:0}.bookmark-studio h3{margin:12px 0 9px}
+.studio-player{position:relative;width:100%;aspect-ratio:16/9;background:#17121d;border-radius:10px;overflow:hidden;margin:8px 0 13px}
+.studio-player iframe,.studio-player>div{width:100%;height:100%;border:0}
+.studio-chips{display:flex;gap:6px;overflow:auto;padding:4px 0 10px}
+.studio-chips button{flex-shrink:0;border:1px solid #e9e2ef;border-radius:9px;background:#f8f5fb;color:#5b4c70;padding:7px 10px;font-size:12px;min-width:75px}
+.studio-chips button.selected{background:#e7d8f3;color:#7046a0}
+.studio-chips small{display:block;color:#93829f;font-size:10px;margin-top:3px}
+.studio-panel{padding:12px;border-radius:11px;background:#faf8fc;min-width:0}
+.studio-panel .field{margin-top:10px}.studio-times{display:grid;grid-template-columns:1fr 1fr;gap:8px}.studio-times button{margin-top:5px}
+.studio-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin:8px 0 12px}
+.studio-actions button{min-width:0}.studio-history,.skill-evaluation-history p{padding:10px 0;border-bottom:1px solid #eae4f0;margin:0}
+.studio-history small,.skill-evaluation-history small{display:block;color:#97869e;font-size:11px;margin-bottom:5px}
+.studio-history span,.skill-evaluation-history span{display:block;white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}
+.skill-evaluation-history{background:#f8f6fa;border-radius:10px;padding:12px;margin-top:10px;max-height:250px;overflow:auto}
+.skill-evaluation-history>b{display:block;margin-bottom:8px;font-size:12px}
+@media(max-width:370px){.studio-panel{padding:8px}}
