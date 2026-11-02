@@ -59,3 +59,6 @@
 .skill-evaluation-history{background:#f8f6fa;border-radius:10px;padding:12px;margin-top:10px;max-height:250px;overflow:auto}
 .skill-evaluation-history>b{display:block;margin-bottom:8px;font-size:12px}
 @media(max-width:370px){.studio-panel{padding:8px}}
+
+/* Practice player and per-segment cautions */
+.studio-video-wrap{position:relative;min-width:0}.studio-placeholder{height:100%;display:grid;place-items:center;text-align:center;color:#fff;padding:16px;font-size:12px}.studio-caution-overlay{position:absolute;top:16px;left:10px;right:10px;max-height:35%;overflow:hidden;padding:9px 11px;border-radius:8px;background:rgba(25,20,33,.88);color:white;pointer-events:none;display:flex;gap:8px;align-items:flex-start;white-space:pre-wrap;overflow-wrap:anywhere}.studio-caution-overlay b{color:#e7d4fa;font-size:11px;flex:none}.studio-caution-overlay span{font-size:12px;line-height:1.4}
