@@ -62,3 +62,13 @@
 
 /* Practice player and per-segment cautions */
 .studio-video-wrap{position:relative;min-width:0}.studio-placeholder{height:100%;display:grid;place-items:center;text-align:center;color:#fff;padding:16px;font-size:12px}.studio-caution-overlay{position:absolute;top:16px;left:10px;right:10px;max-height:35%;overflow:hidden;padding:9px 11px;border-radius:8px;background:rgba(25,20,33,.88);color:white;pointer-events:none;display:flex;gap:8px;align-items:flex-start;white-space:pre-wrap;overflow-wrap:anywhere}.studio-caution-overlay b{color:#e7d4fa;font-size:11px;flex:none}.studio-caution-overlay span{font-size:12px;line-height:1.4}
+
+/* Dance Flow parity: responsive centered player and zoom in both modes */
+.studio-video-wrap{width:100%;max-width:640px;margin-left:auto;margin-right:auto;align-self:center}
+.studio-video-wrap .studio-player{width:100%;margin:8px 0 9px;overflow:hidden}
+.studio-video-wrap.zoomed .studio-player iframe{transform:scale(1.45);transform-origin:center center}
+.studio-zoom-controls{display:flex;justify-content:center;align-items:center;gap:9px;flex-wrap:wrap;margin:0 0 12px}
+.studio-zoom-controls button{background:#eee8f5;color:#7252a2;border:0;border-radius:7px;padding:7px 13px;font-size:12px;font-weight:650}
+.studio-zoom-controls button.selected{background:#dcd0ef;color:#624292}
+.studio-zoom-controls small{color:#91859e;font-size:10px}
+@media(max-width:699px){.studio-video-wrap{max-width:100%}}
