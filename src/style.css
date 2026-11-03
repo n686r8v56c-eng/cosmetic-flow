@@ -131,3 +131,8 @@
 .cf-person small{font-size:10px;color:#96859c}.cf-search{display:flex;align-items:center;gap:6px;background:#f7f2fa;border-radius:7px;padding:4px 8px}
 .cf-search input{background:transparent;border:0;box-shadow:none;outline:0;font-size:13px;width:100%}
 @media(min-width:700px){.cf-gallery,.cf-home-photos{grid-template-columns:repeat(5,minmax(0,1fr))}}
+
+
+.cf-storage-usage{display:grid;gap:5px;padding:11px;border-radius:9px;background:#f7f1fb;border:1px solid #e9dff3;margin:10px 0}
+.cf-storage-usage b{font-size:12px;color:#66517e}
+.cf-storage-usage small{font-size:11px;color:#82748c}
