@@ -154,3 +154,256 @@
 .fashion-bulk-footer small,.cosmetic-bulk-footer small,.fashion-bulk-import>small,.cosmetic-bulk-import>small{font-size:11px;color:#857597}
 .fashion-bulk-footer button,.cosmetic-bulk-footer button{display:inline-flex;gap:4px;align-items:center;justify-content:center;border:0;border-radius:8px;background:#8260b0;color:white;padding:8px 10px;font-size:12px;font-weight:700}
 .fashion-bulk-footer button:disabled,.cosmetic-bulk-footer button:disabled{opacity:.45}
+
+
+/* Readable phone typography; retain desktop sizes and existing layout. */
+@media (max-width: 749px) {
+    h3 {
+        font-size: 16px !important
+    }
+    .muted,.hint {
+        font-size: 15px !important
+    }
+    .sync {
+        font-size: 13px !important
+    }
+    .nav button {
+        font-size: 14px !important
+    }
+    .subtabs button {
+        font-size: 15px !important
+    }
+    .primary,.secondary,.danger {
+        font-size: 15px !important
+    }
+    .hero small {
+        font-size: 13px !important
+    }
+    .hero p {
+        font-size: 15px !important
+    }
+    .kpi small {
+        font-size: 14px !important
+    }
+    .kpi em {
+        font-size: 14px !important
+    }
+    .quickactions button {
+        font-size: 15px !important
+    }
+    .linkbtn {
+        font-size: 15px !important
+    }
+    .chip {
+        font-size: 14px !important
+    }
+    .itemtext b {
+        font-size: 16px !important
+    }
+    .itemtext small {
+        font-size: 14px !important
+    }
+    .empty {
+        font-size: 15px !important
+    }
+    .photocard span {
+        font-size: 15px !important
+    }
+    .photocard small {
+        font-size: 13px !important
+    }
+    .grouphead b {
+        font-size: 16px !important
+    }
+    .grouphead small {
+        font-size: 14px !important
+    }
+    .field>span {
+        font-size: 14px !important
+    }
+    .field input[type=file] {
+        font-size: 15px !important
+    }
+    .checklabel {
+        font-size: 15px !important
+    }
+    .stephead b {
+        font-size: 15px !important
+    }
+    .productchip {
+        font-size: 14px !important
+    }
+    .practice>label {
+        font-size: 16px !important
+    }
+    .practice>small {
+        font-size: 14px !important
+    }
+    .status {
+        font-size: 15px !important
+    }
+    .authswitch button {
+        font-size: 15px !important
+    }
+    .toast {
+        font-size: 15px !important
+    }
+    @media (min-width:650px) {
+        .nav button {
+            font-size: 16px !important
+        }
+    }
+    @media (max-width:370px) {
+        .nav button {
+            font-size: 13px !important
+        }
+    }
+    .nav button {
+        font-size: 13px !important
+    }
+    @media (min-width:650px) {
+        .nav button {
+            font-size: 14px !important
+        }
+    }
+    @media (max-width:370px) {
+        .nav button {
+            font-size: 13px !important
+        }
+    }
+    .productresult b {
+        font-size: 15px !important
+    }
+    .productresult small {
+        font-size: 13px !important
+    }
+    .productclose {
+        font-size: 14px !important
+    }
+    .skill-list-main b {
+        font-size: 16px !important
+    }
+    .skill-list-main small {
+        font-size: 14px !important
+    }
+    .skill-status {
+        font-size: 14px !important
+    }
+    .skill-gallery-head {
+        font-size: 15px !important
+    }
+    .studio-chips button {
+        font-size: 15px !important
+    }
+    .studio-chips small {
+        font-size: 13px !important
+    }
+    .studio-history small,.skill-evaluation-history small {
+        font-size: 14px !important
+    }
+    .studio-history span,.skill-evaluation-history span {
+        font-size: 15px !important
+    }
+    .skill-evaluation-history>b {
+        font-size: 15px !important
+    }
+    .studio-placeholder {
+        font-size: 15px !important
+    }
+    .studio-caution-overlay b {
+        font-size: 14px !important
+    }
+    .studio-caution-overlay span {
+        font-size: 15px !important
+    }
+    .studio-zoom-controls button {
+        font-size: 15px !important
+    }
+    .studio-zoom-controls small {
+        font-size: 13px !important
+    }
+    .linked-caution-list small,.linked-caution-list span {
+        font-size: 14px !important
+    }
+    .cf-home-kpis small {
+        font-size: 14px !important
+    }
+    .cf-home-actions button {
+        font-size: 14px !important
+    }
+    .cf-photo-card b {
+        font-size: 14px !important
+    }
+    .cf-photo-card small {
+        font-size: 13px !important
+    }
+    .cf-head b {
+        font-size: 16px !important
+    }
+    .cf-compare small {
+        font-size: 14px !important
+    }
+    .cf-form label {
+        font-size: 15px !important
+    }
+    .cf-form input,.cf-form select {
+        font-size: 16px !important
+    }
+    .cf-calendar-grid>button,.cf-calendar-grid>span {
+        font-size: 15px !important
+    }
+    .cf-week span {
+        font-size: 13px !important
+    }
+    .cf-subs button {
+        font-size: 14px !important
+    }
+    .cf-dialog h3 {
+        font-size: 15px !important
+    }
+    .cf-calendar-row {
+        font-size: 15px !important
+    }
+    .cf-calendar-row small {
+        font-size: 14px !important
+    }
+    .cf-mini-grid small {
+        font-size: 13px !important
+    }
+    .cf-person b {
+        font-size: 15px !important
+    }
+    .cf-person small {
+        font-size: 13px !important
+    }
+    .cf-search input {
+        font-size: 16px !important
+    }
+    .cf-storage-usage b {
+        font-size: 15px !important
+    }
+    .cf-storage-usage small {
+        font-size: 14px !important
+    }
+    .linked-bookmark-btn {
+        font-size: 14px !important
+    }
+    .linked-bookmark-filter {
+        font-size: 14px !important
+    }
+    .linked-bookmark-filter button {
+        font-size: 14px !important
+    }
+    .fashion-bulk-import>b,.cosmetic-bulk-import>b {
+        font-size: 15px !important
+    }
+    .fashion-bulk-import textarea,.cosmetic-bulk-import textarea {
+        font-size: 15px !important
+    }
+    .fashion-bulk-footer small,.cosmetic-bulk-footer small,.fashion-bulk-import>small,.cosmetic-bulk-import>small {
+        font-size: 14px !important
+    }
+    .fashion-bulk-footer button,.cosmetic-bulk-footer button {
+        font-size: 15px !important
+    }
+}
