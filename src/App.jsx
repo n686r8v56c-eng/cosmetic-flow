@@ -6,6 +6,7 @@ import{createClient}from '@supabase/supabase-js';
 import {videoThumb} from './BookmarkStudio.jsx';
 import StudyPracticeBookmark,{parseTimeMarkers,makeMarkers,youtubeId} from './StudyPracticeBookmark.jsx';
 import{House,Images,Brush,Package,ListChecks,ChartNoAxesColumn,Plus,Settings,ChevronRight,ChevronLeft,ChevronUp,ChevronDown,X,Trash2,Pencil,Upload,LogOut,Check,Bookmark,Camera,Search,Download,Link as LinkIcon,Heart,CalendarDays,UserRound}from'lucide-react';
+const sameSnapshot=(a,b)=>{const order=x=>Array.isArray(x)?x.map(order):x&&typeof x==='object'?Object.fromEntries(Object.keys(x).sort().map(k=>[k,order(x[k])])):x;return JSON.stringify(order(a))===JSON.stringify(order(b))};
 const url=import.meta.env.VITE_SUPABASE_URL,key=import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
 const supabase=url&&key?createClient(url,key,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}}):null;
 configureMedia(supabase);
@@ -32,7 +33,7 @@ useEffect(()=>{if(!ready||!session?.user||initialized.current!==session.user.id|
  const {data:row,error:readError}=await supabase.from('makeup_flow_data').select('payload').eq('user_id',owner).maybeSingle();
  if(readError)throw readError;
  if(initialized.current!==owner||saveBlocked.current)return;
- if(JSON.stringify(row?.payload??null)!==JSON.stringify(serverBaseline.current)){
+ if(!sameSnapshot(row?.payload??null,serverBaseline.current)){
   saveBlocked.current=true;
   try{localStorage.setItem('cosmetic-flow-conflict-backup-'+owner,JSON.stringify(data))}catch{}
   setSync('다른 기기 수정 감지 · 저장 중단 (기기 백업 유지)');return;
