@@ -293,7 +293,7 @@ export default function CareLibrary({data,onUpdate,area,group,sync,readOnly=fals
   if(!database||!userId||!thumbnailPaths.length)return;
   let active=true;
   Promise.all(thumbnailPaths.map(async path=>{
-   const {data:link,error}=await database.storage.from('body-care-technique-images').createSignedUrl(path,3600);
+   const {data:link,error}=await database.storage.from('cosmetic-media').createSignedUrl(path,3600);
    return [path,error?'':link?.signedUrl||''];
   })).then(entries=>{if(active)setThumbnailSigned(old=>({...old,...Object.fromEntries(entries)}))});
   return ()=>{active=false};
@@ -307,9 +307,9 @@ export default function CareLibrary({data,onUpdate,area,group,sync,readOnly=fals
   setThumbnailBusy(url);
   try{
    const path=userId+'/instagram/'+nextId()+'.'+extensions[file.type];
-   const {error}=await database.storage.from('body-care-technique-images').upload(path,file,{contentType:file.type,cacheControl:'3600',upsert:false});
+   const {error}=await database.storage.from('cosmetic-media').upload(path,file,{contentType:file.type,cacheControl:'3600',upsert:false});
    if(error)throw error;
-   const {data:link,error:signError}=await database.storage.from('body-care-technique-images').createSignedUrl(path,3600);
+   const {data:link,error:signError}=await database.storage.from('cosmetic-media').createSignedUrl(path,3600);
    if(signError)throw signError;
    setThumbnailSigned(old=>({...old,[path]:link.signedUrl}));
    update(d=>{
